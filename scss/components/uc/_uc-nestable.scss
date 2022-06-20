@@ -1,0 +1,90 @@
+ // Variable.scss
+
+.nestable-cart {
+    overflow: hidden;
+}
+
+.dd-handle {
+    color: $white;
+    background: $primary;
+    border-radius: 0;
+    border: 1px solid $border;
+    .btn{
+			border: none !important;
+		}
+   &.dd-handle--custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px; 
+		border: none;
+    border-radius: 5px; 
+		padding-left: 25px;
+       h2{
+        color: $white; 
+        font-size: 14px;
+        margin-bottom: 0;
+       }
+       ul{
+        display: flex;
+        li{
+					padding: 0 5px;
+					button{
+							padding: 3px;   
+					}
+        }
+       }
+   }
+	 &.dd-handle--chield{
+		 h2{
+			color: #24365C;
+		 }
+	 }
+	 &.add-handele--three{
+		background: #FFF !important;
+    border: 1px solid #DDD;
+	 }
+	 &.dd-handle--two{
+		background: #ECF2FF !important;
+		color: #24365C ;
+	}
+}
+ 
+.dd-handle:hover {
+    color: $white;
+    background: $primary;
+}
+.dd3-content:hover {
+    color: $white;
+    background: $primary;
+}
+.dd3-content {
+    color: $white;
+}
+
+/// info-slider
+ 
+.dd{
+	max-width: 100% !important;
+}
+.dd-item{
+	&>button{
+		right: -25px;
+		top: 6px; 
+	}
+	&.dd-item--custom{
+		&>button{ 
+			&.dd-expand{
+				&::before{
+					color : #24365C;
+				}
+			}
+			&.dd-collapse{
+				&::before{
+					color : #24365C;
+				}
+			}
+		}
+	}
+} 
+// .dd-item>button.dd-collapse:before
