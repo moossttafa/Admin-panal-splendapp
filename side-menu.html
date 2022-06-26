@@ -647,6 +647,28 @@
 		<!--**********************************
             Chat box End
         ***********************************-->
+		<!--**********************************
+					start  Mobile View
+			***********************************-->
+			<div class="mobile-view">
+				<div class="mobile__close">Mobile view</div>
+				<div class="card">
+					<div class="card-body">
+						<div class="screen-inner">
+							<img src="./images/viewer.png" class="mobile-image" alt="pic">
+							<div class="iframe-inner">
+								<iframe src="https://www.w3docs.com" style="height:100%; width: 100%; padding: 0;">
+									<h2 style="color: black;">dasdasda</h2>
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--**********************************
+					End  Mobile View
+			***********************************-->
 
 		<!--**********************************
             Sidebar Fixed
@@ -1493,15 +1515,87 @@
 
 				<!-- Nestable -->
 				<div class="row">
-					<div class="col-lg-9">
+					<div class="col-lg-4 col-md-12">
+						<div class="card">
+							<div class="card-body">
+								<button type="button" class="btn btn-primary btn-sm btn-padding" data-toggle="modal"
+									data-target="#exampleModalCenter">Add Category</button>
+										<!-- Nav tabs -->
+										<div class="custom-tab-1 mt-4">
+											<ul class="nav nav-tabs">
+												<li class="nav-item">
+														<a class="nav-link active" data-toggle="tab" href="#home1"> English</a>
+												</li>
+												<li class="nav-item">
+														<a class="nav-link" data-toggle="tab" href="#profile1"> Arabic</a>
+												</li> 
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane fade show active" id="home1" role="tabpanel">
+													<div class="pt-4">
+														<div class="form-group">
+															<div class="custom-control custom-checkbox">
+																<form>
+																	<div class="form-group">
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="gridCheck">
+																			<label class="custom-control-label" for="gridCheck"> Active</label>
+																		</div>
+																	</div> 
+																	<div class="form-group">
+																		<label>Name</label>
+																		<input type="text" placeholder="" class="form-control">
+																	</div>
+																	<div class="form-group">
+																		<label>URL :</label>
+																		<input type="text" placeholder="" class="form-control">
+																	</div> 
+																	<div class="form-row"> 
+																		<div class="form-group col-md-12">
+																			<label>image</label> 
+																			<input type="file" class="form-control" alt="Submit">  
+																		</div>   
+																	</div>  
+																</form>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="profile1">
+													<div class="pt-4">
+														<div class="form-group">
+															<div class="custom-control custom-checkbox">
+																<form>
+																	<div class="form-group">
+																		<div class="custom-control custom-checkbox">
+																			<input type="checkbox" class="custom-control-input" id="gridCheck">
+																			<label class="custom-control-label" for="gridCheck"> Check me out</label>
+																		</div>
+																	</div> 
+																	<div class="form-group">
+																		<label>Name</label>
+																		<input type="text" placeholder="" class="form-control">
+																	</div>   
+																</form>
+															</div>
+														</div>
+													</div>
+												</div> 
+											</div>
+										</div> 
+										<div class="modal-footer model-footer--left">
+											<button type="button" class="btn btn-primary">Save</button> 
+										</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 col-md-12">
 						<div class="card card--category">
 							<div class="card-body">
 								<div class="row">
 									<div class="col-md-12">
 										<div class=" action-wrapper ">
-											<div class="actions-category">
-												<button type="button" class="btn btn-primary btn-sm btn-padding" data-toggle="modal"
-													data-target="#exampleModalCenter">Add Category</button>
+											<div class="actions-category"> 
 												<button type="button" class="btn light btn-papy-blue btn-sm">Copy Language</button>
 												<button type="button" class="btn light btn-papy-blue btn-sm btn-icon-style">
 													<svg id="_1" data-name="1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -2466,7 +2560,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<!-- <div class="col-lg-3 col-lg-3">
 						<div class="main-preview">
 							<div class="mobile" id="frame-container">
 								<iframe src="https://www.w3docs.com" style="height:100%; width: 100%; padding: 0;">
@@ -2474,7 +2568,7 @@
 								</iframe>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

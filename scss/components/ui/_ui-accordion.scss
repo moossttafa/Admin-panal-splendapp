@@ -47,9 +47,12 @@
 			box-shadow:0 15px 20px 0 rgba($primary, 0.15);
 			border-bottom-left-radius:$radius;
 			border-bottom-right-radius:$radius;
+         
 		}
 	}
-
+    .accordion__body--text{
+        padding: 0.875rem 0.25rem !important;
+        }
 	&-danger{
 		.accordion__header {
 			&.collapsed{

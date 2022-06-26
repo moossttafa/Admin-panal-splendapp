@@ -187,8 +187,8 @@
 									<div class="image-wrapper">
 										<img src="./images/banner.png" alt="pic">
 									</div>
-									<h4 class="title">Explore Help Topics</h4>
-									<ul>
+									<h4 class="name">Explore Help Topics</h4>
+									<ul class="accordion-list">
 										<li>One</li>
 										<li>Two</li>
 										<li>Three</li>
@@ -213,9 +213,19 @@
 								<span class="accordion__header--indicator style_two"></span>
 							</div>
 							<div id="with-icon_collapseFour" class="collapse accordion__body" data-parent="#accordion-six">
-								<div class="accordion__body--text">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-									moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+								<div class="accordion__body--custom ">
+									<h4 class="title">Explore Help Topics</h4>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+									<div class="image-wrapper">
+										<img src="./images/banner.png" alt="pic">
+									</div>
+									<h4 class="name">Explore Help Topics</h4>
+									<ul class="accordion-list accordion-list--num">
+										<li>One</li>
+										<li>Two</li>
+										<li>Three</li>
+										<li>Foure</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -1128,17 +1138,16 @@
 
 	<script>
 		$('.owl-carousel').owlCarousel({
-			center: true,
-			loop: true,
+			center: true, 
 			margin: 20,
 			nav: false,
 			dots: false,
 			responsive: {
 				0: {
-					items: 1
+					items: 2
 				},
 				600: {
-					items: 1
+					items: 2
 				},
 				1000: {
 					items: 1

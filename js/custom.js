@@ -237,6 +237,16 @@ var MotaAdmin = function(){
 		});
 	}
 
+	// Mobile View
+	var handleMobileView = function() {
+		jQuery('.mobile__close').on('click',function(){
+			jQuery('.mobile-view').addClass('active-view');
+		});
+		jQuery('.mobile__close' ).on('click',function(){
+			jQuery('.mobile-view').removeClass('active-view');
+		});
+	}
+	console.log("dsf")
 
 	// Chart All Pages
 	
@@ -395,7 +405,8 @@ var MotaAdmin = function(){
 			vHeight();
 			handleDailySalesChart();
 			handleSharePofitChart();
-			handleChatbox();
+			handleChatbox(); 
+			handleMobileView();
 		},
 
 		
