@@ -138,6 +138,8 @@
     &.card--category{
         // height: calc(100%);
         margin-bottom: 20px;
+        overflow-y: scroll;
+        height: 550px;
     }
     
 }
