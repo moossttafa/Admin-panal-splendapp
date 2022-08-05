@@ -140,6 +140,9 @@
         margin-bottom: 20px;
         overflow-y: scroll;
         height: 550px;
+        @media(max-width : 767px){
+            height: auto;
+        }
     }
     
 }

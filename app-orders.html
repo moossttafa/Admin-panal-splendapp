@@ -978,7 +978,7 @@
         <div class="row page-titles mx-0">
           <div class="col-sm-6">
               <div class="welcome-text">
-                  <h4>New Notification</h4>
+                  <h4>New Order</h4>
                   <p class="mb-0">File all fields</p>
               </div>
           </div>
@@ -992,106 +992,28 @@
 				<div class="row">
 					<div class="col-xl-12 col-xxl-12">
 						<div class="row">
-							<div class="col-xl-3 col-xxl-3 col-lg-6 col-sm-6">
-								<div class="card overflow-hidden">
-									<div class="card-body pb-0 px-4 pt-4">
-										<div class="row">
-											<div class="col">
-												<h5 class="mb-1">2000</h5>
-												<span class="text-success">Total Sale</span>
-											</div>
-										</div>
+							<div class="col-xl-6 col-xxl-6 col-lg-12 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+											<h4 class="card-title">Basic Bar Chart</h4>
 									</div>
-									<div class="chart-wrapper">
-										<canvas id="areaChart_2" class="chartjs-render-monitor" height="90"></canvas>
+									<div class="card-body">
+											<canvas id="barChart_1"></canvas>
 									</div>
-								</div>
 							</div>
-							<div class="col-xl-3 col-xxl-3 col-lg-6 col-sm-6">
-								<div class="card bg-success	overflow-hidden">
-									<div class="card-body pb-0 px-4 pt-4">
-										<div class="row">
-											<div class="col">
-												<h5 class="text-white mb-1">$14000</h5>
-												<span class="text-white">Total Eraning</span>
-											</div>
-										</div>
+							</div> 
+							<div class="col-xl-6 col-xxl-6 col-lg-12 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+											<h4 class="card-title">Gradient Bar Chart</h4>
 									</div>
-									<div class="chart-wrapper" style="width:100%">
-										<span class="peity-line" data-width="100%">6,2,8,4,3,8,4,3,6,5,9,2</span>
+									<div class="card-body">
+											<canvas id="barChart_2"></canvas>
 									</div>
-								</div>
 							</div>
-							<div class="col-xl-3 col-xxl-3 col-lg-6 col-sm-6">
-								<div class="card bg-primary overflow-hidden">
-									<div class="card-body pb-0 px-4 pt-4">
-										<div class="row">
-											<div class="col text-white">
-												<h5 class="text-white mb-1">570</h5>
-												<span>VIEWS OF YOUR PROJECT</span>
-											</div>
-										</div>
-									</div>
-									<div class="chart-wrapper px-2">
-										<canvas id="chart_widget_2" height="100"></canvas>
-									</div>
-								</div>
-							</div>
-							<div class="col-xl-3 col-xxl-3 col-lg-6 col-sm-6">
-								<div class="card overflow-hidden">
-									<div class="card-body px-4 py-4">
-										<h5 class="mb-3">1700 / <small class="text-primary">Sales Status</small></h5>
-										<div class="chart-point">
-											<div class="check-point-area">
-												<canvas id="ShareProfit2"></canvas>
-											</div>
-											<ul class="chart-point-list">
-												<li><i class="fa fa-circle text-primary mr-1"></i> 40% Tickets</li>
-												<li><i class="fa fa-circle text-success mr-1"></i> 35% Events</li>
-												<li><i class="fa fa-circle text-warning mr-1"></i> 25% Other</li>
-											</ul>
-										</div>
-									</div>
-								</div>
 							</div> 
 						</div>
-					</div>  
-					<div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
-						<div id="user-activity" class="card">
-							<div class="card-header border-0 pb-0 d-sm-flex d-block">
-								<div>
-									<h4 class="card-title">History 2013 - 2021</h4>
-									<p class="mb-1">Lorem Ipsum is simply dummy text of the printing</p>
-								</div>
-								<div class="card-action">
-									<ul class="nav nav-tabs" role="tablist">
-										<li class="nav-item">
-											<a class="nav-link active" data-toggle="tab" href="#user" role="tab">
-												Monthly
-											</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" data-toggle="tab" href="#bounce" role="tab">
-												Weekly
-											</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" data-toggle="tab" href="#session-duration" role="tab">
-												Today
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="card-body">
-								<div class="tab-content" id="myTabContent">
-									<div class="tab-pane fade show active" id="user" role="tabpanel">
-										<canvas id="activity" class="chartjs"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					</div>   
 				</div>
 			</div>
 		</div>
@@ -1138,6 +1060,17 @@
 	<!-- Svganimation scripts -->
 	<script src="./vendor/svganimation/vivus.min.js"></script>
 	<script src="./vendor/svganimation/svg.animation.js"></script>
+
+		<!-- Apex Chart -->
+		<script src="./vendor/apexchart/apexchart.js"></script>
+    
+
+		<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+			<script src="./js/plugins-init/chartjs-init.js"></script> 
+			<!-- Chart Chartist plugin files -->
+			<!-- <script src="./vendor/chartist/js/chartist.min.js"></script> -->
+			<script src="./vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+			<!-- <script src="./js/plugins-init/chartist-init.js"></script> -->
 
 	<!-- owl carousel --> 
 

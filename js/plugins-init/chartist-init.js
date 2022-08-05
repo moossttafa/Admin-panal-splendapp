@@ -415,6 +415,32 @@
 		];
 		new Chartist.Bar('#overlapping-bars', data, options, responsiveOptions);
 	}
+	// 2
+	var overlappingBarsChart2 = function(){
+		//Overlapping bars on mobile
+		var data = {
+			labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+			series: [
+			  [5, 4, 3, 7, 5, 10, 3, 4, 8, 10, 6, 8],
+			  [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4]
+			]
+		  };
+		var options = {
+			seriesBarDistance: 10
+		};
+		var responsiveOptions = [
+			['screen and (max-width: 640px)', {
+			  seriesBarDistance: 5,
+			  axisX: {
+				labelInterpolationFnc: function (value) {
+				  return value[0];
+				}
+			  }
+			}]
+		];
+		new Chartist.Bar('#overlapping-bars2', data, options, responsiveOptions);
+	}
+	///
 	var multiLineChart = function(){
 		//Multi-line labels
 		new Chartist.Bar('#multi-line-chart', {
@@ -837,6 +863,7 @@
 				lineSmoothingChart();
 				biPolarBarChart();
 				overlappingBarsChart();
+				overlappingBarsChart2();
 				multiLineChart();
 				stackedBarChart();
 				horizontalBarChart();

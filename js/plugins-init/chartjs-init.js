@@ -38,6 +38,45 @@ if(jQuery('#barChart_1').length > 0 ){
         }
     });
 }
+
+    //basic bar chart 2
+    if(jQuery('#barChart_222').length > 0 ){
+        const barChart_222 = document.getElementById("barChart_222").getContext('2d');
+        
+        barChart_222.height = 100;
+    
+        new Chart(barChart_222, {
+            type: 'bar',
+            data: {
+                defaultFontFamily: 'Poppins',
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                datasets: [
+                    {
+                        label: "My First dataset",
+                        data: [65, 59, 80, 81, 56, 55, 40],
+                        borderColor: 'rgba(58, 122, 254, 1)',
+                        borderWidth: "0",
+                        backgroundColor: 'rgba(58, 122, 254, 1)'
+                    }
+                ]
+            },
+            options: {
+                legend: false, 
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        // Change here
+                        barPercentage: 0.5
+                    }]
+                }
+            }
+        });
+    }
+
 if(jQuery('#barChart_2').length > 0 ){
 
 //gradient bar chart
@@ -81,7 +120,49 @@ if(jQuery('#barChart_2').length > 0 ){
         }
     });
 }
+if(jQuery('#barChart_221').length > 0 ){
 
+    //gradient bar chart
+        const barChart_221 = document.getElementById("barChart_221").getContext('2d');
+        //generate gradient
+        const barChart_2gradientStroke = barChart_221.createLinearGradient(0, 0, 0, 250);
+        barChart_2gradientStroke.addColorStop(0, "rgba(58, 122, 254, 1)");
+        barChart_2gradientStroke.addColorStop(1, "rgba(58, 122, 254, 0.5)");
+    
+        barChart_2.height = 100;
+    
+        new Chart(barChart_221, {
+            type: 'bar',
+            data: {
+                defaultFontFamily: 'Poppins',
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                datasets: [
+                    {
+                        label: "My First dataset",
+                        data: [65, 59, 80, 81, 56, 55, 40],
+                        borderColor: barChart_2gradientStroke,
+                        borderWidth: "0",
+                        backgroundColor: barChart_2gradientStroke, 
+                        hoverBackgroundColor: barChart_2gradientStroke
+                    }
+                ]
+            },
+            options: {
+                legend: false, 
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }],
+                    xAxes: [{
+                        // Change here
+                        barPercentage: 0.5
+                    }]
+                }
+            }
+        });
+    }
 
 //stalked bar chart
 if(jQuery('#barChart_3').length > 0 ){

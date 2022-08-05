@@ -23,13 +23,17 @@
 
 	<!-- Style css -->
 	<link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
-	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+ 	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
 	<link href="./css/style.css" rel="stylesheet">
 	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+ 
 	<!-- owl carousel --> 
 	<link rel="stylesheet" href="./lib/css/owl.carousel.min.css"> 
 	<link rel="stylesheet" href="./lib/css/owl.theme.default.min.css">
+		<!-- Apex Chart -->
+		<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
+
+	<script src="./vendor/apexchart/apexchart.js"></script>
 </head>
 
 <body>
@@ -992,67 +996,59 @@
 				<div class="row">
 					<div class="col-xl-12 col-xxl-12">
 						<div class="row">
-							<div class="col-xl-4 col-xxl-4 col-lg-6 col-sm-6">
-								<div class="card overflow-hidden">
-									<div class="card-body pb-0 px-4 pt-4">
-										<div class="row">
-											<div class="col">
-												<h5 class="mb-1">2000</h5>
-												<span class="text-success">Total Sale</span>
-											</div>
-										</div>
+							<div class="col-xl-6 col-xxl-6 col-lg-6 col-sm-12"> 
+								<div class="card card--flotLine1">
+									<div class="card-header">
+										<h4 class="card-title">Daily Installs(Line Chart)</h4>
+										<h4 class="card-title">Daily Uninstalls(Line Chart)</h4>
+										<span class="total-number">0</span>
 									</div>
-									<div class="chart-wrapper">
-										<canvas id="areaChart_2" class="chartjs-render-monitor" height="90"></canvas>
+									<div class="card-body">
+										<div id="flotLine1" class="flot-chart"></div>
 									</div>
 								</div>
 							</div> 
-              <div class="col-xl-4 col-xxl-4 col-lg-6 col-sm-6">
-								<div class="card overflow-hidden">
-									<div class="card-body px-4 py-4">
-										<h5 class="mb-3">1700 / <small class="text-primary">Sales Status</small></h5>
-										<div class="chart-point">
-											<div class="check-point-area">
-												<canvas id="ShareProfit2"></canvas>
-											</div>
-											<ul class="chart-point-list">
-												<li><i class="fa fa-circle text-primary mr-1"></i> 40% Tickets</li>
-												<li><i class="fa fa-circle text-success mr-1"></i> 35% Events</li>
-												<li><i class="fa fa-circle text-warning mr-1"></i> 25% Other</li>
-											</ul>
-										</div>
+              <div class="col-xl-6 col-xxl-6 col-lg-6 col-sm-12"> 
+								<div class="card card--flotLine1">
+									<div class="card-header">
+										<h4 class="card-title">Daily Installs(Line Chart)</h4>
+										<h4 class="card-title">Daily Uninstalls(Line Chart)</h4>
+										<span class="total-number">0</span>
+									</div>
+									<div class="card-body">
+										<div id="flotLine1111" class="flot-chart"></div>
 									</div>
 								</div>
 							</div> 
-							<div class="col-xl-4 col-xxl-4 col-lg-6 col-sm-6">
-								<div class="card bg-primary overflow-hidden">
-									<div class="card-body pb-0 px-4 pt-4">
-										<div class="row">
-											<div class="col text-white">
-												<h5 class="text-white mb-1">570</h5>
-												<span>VIEWS OF YOUR PROJECT</span>
-											</div>
-										</div>
+							<div class="col-xl-6 col-xxl-6 col-lg-6 col-sm-12"> 
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Installs & Uninstalls per country</h4>
 									</div>
-									<div class="chart-wrapper px-2">
-										<canvas id="chart_widget_2" height="100"></canvas>
+									<div class="card-body">
+										<div id="overlapping-bars" class="ct-chart ct-golden-section chartlist-chart"></div>
 									</div>
-								</div>
+							</div>
 							</div>   
-              <div class="col-xl-4 col-xxl-4 col-lg-6 col-sm-6">
-								<div class="card bg-success	overflow-hidden">
-									<div class="card-body pb-0 px-4 pt-4">
-										<div class="row">
-											<div class="col">
-												<h5 class="text-white mb-1">$14000</h5>
-												<span class="text-white">Total Eraning</span>
-											</div>
-										</div>
+              <div class="col-xl-6 col-xxl-6 col-lg-6 col-sm-12"> 
+								<div class="card">
+									<div class="card-header">
+											<h4 class="card-title">Daily Installs Per Languages </h4>
 									</div>
-									<div class="chart-wrapper" style="width:100%">
-										<span class="peity-line" data-width="100%">6,2,8,4,3,8,4,3,6,5,9,2</span>
+									<div class="card-body">
+											<div id="overlapping-bars2" class="ct-chart ct-golden-section chartlist-chart"></div>
 									</div>
 								</div>
+							</div>
+							<div class="col-xl-12 col-xxl-12">
+								<div class="card">
+									<div class="card-header">
+											<h4 class="card-title">Installs per App Version </h4>
+									</div>
+									<div class="card-body">
+											<canvas id="barChart_222"></canvas>
+									</div>
+							</div>
 							</div>
 						</div>
 					</div>   
@@ -1095,8 +1091,17 @@
 	<!-- Chart piety plugin files -->
 	<script src="./vendor/peity/jquery.peity.min.js"></script>
 
+	 <!-- Chart Chartist plugin files -->
+ 	 <script src="./vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+	 <script src="./js/plugins-init/chartist-init.js"></script>
 	<!-- Chartist -->
 	<script src="./vendor/chartist/js/chartist.min.js"></script>
+
+	<script src="./vendor/flot/jquery.flot.js"></script>
+	<script src="./vendor/flot/jquery.flot.pie.js"></script>
+	<script src="./vendor/flot/jquery.flot.resize.js"></script>
+	<script src="./vendor/flot-spline/jquery.flot.spline.min.js"></script>
+	<script src="./js/plugins-init/flot-init.js"></script>
 
 	<!-- Dashboard 1 -->
 	<script src="./js/dashboard/dashboard-1.js"></script>
@@ -1104,6 +1109,21 @@
 	<script src="./vendor/svganimation/vivus.min.js"></script>
 	<script src="./vendor/svganimation/svg.animation.js"></script>
 
+	<script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+     <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+	<!-- Apex Chart -->
+	<script src="./vendor/apexchart/apexchart.js"></script>
+    
+
+	<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="./js/plugins-init/chartjs-init.js"></script> 
+    <!-- Chart Chartist plugin files -->
+    <!-- <script src="./vendor/chartist/js/chartist.min.js"></script> -->
+    <script src="./vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+    <!-- <script src="./js/plugins-init/chartist-init.js"></script> -->
+ 
 	<!-- owl carousel --> 
 
 		<script src="./lib/js/owl.carousel.min.js"></script>

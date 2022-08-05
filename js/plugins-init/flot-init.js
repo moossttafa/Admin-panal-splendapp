@@ -121,7 +121,159 @@
 				}
 			}
 		});
-
+		var plot = $.plot($('#flotLine1111'), [
+			{
+				data: newCust,
+				label: 'New Customer',
+				color: '#3a7afe'
+			},
+			{
+				data: retCust,
+				label: 'Returning Customer',
+				color: '#10ca93'
+			}],
+			{
+				series: {
+					lines: {
+						show: true,
+						lineWidth: 1
+					},
+					shadowSize: 0
+				},
+				points: {
+					show: false,
+				},
+				legend: {
+					noColumns: 1,
+					position: 'nw'
+				},
+				grid: {
+					hoverable: true,
+					clickable: true,
+					borderColor: '#ddd',
+					borderWidth: 0,
+					labelMargin: 5,
+					backgroundColor: 'transparent'
+				},
+				yaxis: {
+					min: 0,
+					max: 15,
+					color: 'transparent',
+					font: {
+						size: 10,
+						color: '#999'
+					}
+				},
+				xaxis: {
+					color: 'transparent',
+					font: {
+						size: 10,
+						color: '#999'
+					}
+				}
+			});
+			var plot = $.plot($('#flotLine111'), [
+				{
+					data: newCust,
+					label: 'New Customer',
+					color: '#3a7afe'
+				},
+				{
+					data: retCust,
+					label: 'Returning Customer',
+					color: '#10ca93'
+				}],
+				{
+					series: {
+						lines: {
+							show: true,
+							lineWidth: 1
+						},
+						shadowSize: 0
+					},
+					points: {
+						show: false,
+					},
+					legend: {
+						noColumns: 1,
+						position: 'nw'
+					},
+					grid: {
+						hoverable: true,
+						clickable: true,
+						borderColor: '#ddd',
+						borderWidth: 0,
+						labelMargin: 5,
+						backgroundColor: 'transparent'
+					},
+					yaxis: {
+						min: 0,
+						max: 15,
+						color: 'transparent',
+						font: {
+							size: 10,
+							color: '#999'
+						}
+					},
+					xaxis: {
+						color: 'transparent',
+						font: {
+							size: 10,
+							color: '#999'
+						}
+					}
+				});
+				var plot = $.plot($('#flotLine11'), [
+					{
+						data: newCust,
+						label: 'New Customer',
+						color: '#3a7afe'
+					},
+					{
+						data: retCust,
+						label: 'Returning Customer',
+						color: '#10ca93'
+					}],
+					{
+						series: {
+							lines: {
+								show: true,
+								lineWidth: 1
+							},
+							shadowSize: 0
+						},
+						points: {
+							show: false,
+						},
+						legend: {
+							noColumns: 1,
+							position: 'nw'
+						},
+						grid: {
+							hoverable: true,
+							clickable: true,
+							borderColor: '#ddd',
+							borderWidth: 0,
+							labelMargin: 5,
+							backgroundColor: 'transparent'
+						},
+						yaxis: {
+							min: 0,
+							max: 15,
+							color: 'transparent',
+							font: {
+								size: 10,
+								color: '#999'
+							}
+						},
+						xaxis: {
+							color: 'transparent',
+							font: {
+								size: 10,
+								color: '#999'
+							}
+						}
+					});
 	var plot = $.plot($('#flotLine2'), [
 		{
 			data: newCust,
