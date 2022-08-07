@@ -572,6 +572,41 @@ if(jQuery('#chart_widget_5').length > 0 ){
 			}
 		});
 	}
+    // ShareProfit22
+    if(jQuery('#ShareProfit22').length > 0 ){
+		//doughut chart
+		const ShareProfit22 = document.getElementById("ShareProfit22").getContext('2d');
+		// ShareProfit2.height = 100;
+		new Chart(ShareProfit22, {
+			type: 'doughnut',
+			data: {
+				defaultFontFamily: 'Poppins',
+				datasets: [{
+					data: [45, 25, 20],
+					borderWidth: 3, 
+					borderColor: "rgba(255, 255, 255, 1)",
+					backgroundColor: [
+						"rgba(58, 122, 254, 1)",
+						"rgba(255, 159, 0, 1)",
+						"rgba(41, 200, 112, 1)"
+					],
+					hoverBackgroundColor: [
+						"rgba(58, 122, 254, 0.9)",
+						"rgba(255, 159, 0, .9)",
+						"rgba(41, 200, 112, .9)"
+					]
+
+				}],
+				
+			},
+			options: {
+				weight: 1,	
+				 cutoutPercentage: 65,
+				responsive: true,
+				maintainAspectRatio: false
+			}
+		});
+	}
 	  
 
 	 jQuery('.dz-chat-user-box .dz-chat-user').on('click',function(){
