@@ -29557,5 +29557,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
     display: none; }
   .tab-content.tab-content--chart .tab-pane {
     width: 100%; } }
+.number-chart {
+  font-size: 1.3rem; }
 
 /*# sourceMappingURL=style.css.map */
